@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count</title>
+</head>
+<script>
+    let counter = 0;
+    function count(){
+        counter++;
+        document.querySelector('#h').innerHTML = counter;
+    }
+    function coun(){
+        counter--;
+        document.querySelector('#h').innerHTML = counter;
+    }
+    document.addEventListener("DOMContentLoaded",()=>{
+        let h1 = document.querySelector('#h');
+        document.querySelector('#btn').onclick = count;
+        document.querySelector('#btn1').onclick = coun;
+   
+    })
+
+</script>
+<style>
+    body{
+        background-color: #AE9E87;
+    }
+    div{
+        background-color: transparent;
+        width: 200px;
+        height: 100px;
+        text-align: center;
+        border-radius: 10px;
+        margin: 200px auto;
+    }
+    button{
+        width: 40px;
+        height: 20px;
+        border: none;
+    }
+    h2{
+        text-align: center;
+        color: rgb(0, 0, 0);
+    }
+</style>
+<body>
+    
+    <div>
+        <h1>Count</h1>
+        <h1 id="h">0</h1>
+        
+        <button id="btn1">-</button>
+        <button id="btn">+</button>
+
+    </div>
+
+   
+</body>
+</html>
